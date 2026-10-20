@@ -1,0 +1,27 @@
+{
+  "name": "kiti-ai",
+  "version": "1.0.0",
+  "description": "Kiti AI - AI text-to-image generation platform (Gemini-powered)",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "migrate": "node server/db/migrate.js",
+    "images": "node scripts/generate-site-images.js",
+    "test:fallback": "node scripts/test-fallback.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^13.0.3",
+    "better-sqlite3-session-store": "^0.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "sharp": "^0.35.5",
+    "uuid": "^9.0.1"
+  }
+}
